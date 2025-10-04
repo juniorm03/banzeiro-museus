@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles-2.0.css">
+    <title>Banzeiro Viagens</title>
+</head>
+<body>
+    <!-- CABEÇALHO DA PÁGINA -->
+    <header>
+        <!-- Header será carregado aqui pelo JavaScript -->
+    </header>
+    <!-- FIM DO CABEÇALHO DA PÁGINA -->
+    
+    <main>
+        <div id="container-apresentacao">
+            <h1>Descubra e saiba mais sobre os museus de Belém com a Banzeiro</h1>
+            <h3>Experiências visuais, táteis e olfativas que apenas o norte do Brasil pode oferecer!</h3>
+        </div>
+
+        <!--CARROSSEL-->
+            <section class="container-carrossel">
+                <h2>Museus em destaque</h2>
+                <div class="carrossel-container">
+                    <input type="radio" name="carrossel" id="slide1" checked>
+                    <input type="radio" name="carrossel" id="slide2">
+                    <input type="radio" name="carrossel" id="slide3">
+
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="./img/algodoal.jpeg" alt="Museu do Estado do Pará">
+                            <div class="texto-slide">
+                                <h3>Museu do Estado do Pará</h3>
+                                <p>Acervo histórico</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/arraial-do-pavulagem.jpg" alt="Museu Emilio Goeldi">
+                            <div class="texto-slide">
+                                <h3>Museu do Estado do Pará</h3>
+                                <p>Acervo histórico</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/Baiao-de-Dois.jpg" alt="Museu de Arte Sacra">
+                            <div class="texto-slide">
+                                <h3>Museu do Estado do Pará</h3>
+                                <p>Acervo histórico</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navegacao">
+                        <label for="slide1" class="botao"></label>
+                        <label for="slide2" class="botao"></label>
+                        <label for="slide3" class="botao"></label>
+                    </div>
+
+                    <div class="setas">
+                        <label for="slide1" class="seta prev"></label>
+                        <label for="slide2" class="seta next"></label>
+                    </div>
+                </div>
+            </section>
+        <!--FIM DO CARROSSEL-->
+
+        <!--DESTAQUES-->
+            <section class="container-destaques">
+                <h2>Últimas atualizações</h2>
+                <div class="destaques">
+                    <div class="container-card">
+                        <div class="card">
+                            <img src="./img/algodoal.jpeg" alt="">
+                            <div class="card-corpo">
+                                <h5 class="card-titulo""></h5>
+                                <p>Inauguração Museu das Amazônias</p>
+                                <a href=""><button>Saiba mais</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="card">
+                            <img src="./img/Basílica.jpg" alt="">
+                            <div class="card-corpo">
+                                <h5 class="card-titulo""></h5>
+                                <p>Inauguração Museu das Amazônias</p>
+                                <a href=""><button>Saiba mais</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-card">
+                        <div class="card">
+                            <img src="./img/belem.jpg" alt="">
+                            <div class="card-corpo">
+                                <h5 class="card-titulo""></h5>
+                                <p>Inauguração Museu das Amazônias</p>
+                                <a href=""><button>Saiba mais</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!--FIM DOS DESTAQUES-->
+
+        <!--NEWSLETTER-->
+            <section class="container-newsletter">
+                <div class="texto-newsletter">
+                    <h3>Cadastre-se em nossa Newsletter para receber as últimas atualizações!</h3>
+                </div>
+                <form class="email-newsletter">
+                    <input type="email" id="usuario-email" placeholder="Digite seu e-mail" required>
+                    <button type="submit" class="botao-newsletter">Cadastrar</button>
+                </form>
+            </section>
+        <!--FIM NEWSLETTER-->
+    </main>
+    
+    <!-- RODAPÉ DA PÁGINA -->
+    <footer>
+        <!-- Footer será carregado aqui pelo JavaScript -->
+    </footer>
+    <!-- FIM RODAPÉ DA PÁGINA -->
+
+    <!-- Incluir o loader JavaScript -->
+    <script src="./js/loader.js"></script>
+</body>
+</html>

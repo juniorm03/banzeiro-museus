@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura</title>
+    <link rel="icon" href="./img/logo/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- Navbar Superior -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./img/logo/logo_banzeiro.png" alt="Logo Banzeiro" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="d-flex align-items-center">
+                    <span class="text-dark me-2">Entre ou cadastre-se</span>
+                    <button type="button" class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="bi bi-person-circle me-1"></i> Login
+                    </button>
+                    <button type="button" class="btn btn-register" data-bs-toggle="modal"
+                        data-bs-target="#registerModal">
+                        <i class="bi bi-person-plus me-1"></i> Cadastre-se
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal de Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Acesse sua conta ou cadastre-se</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="text-center mb-4">
+                        <img src="./img/logo/logo_55_39.png" alt="Logo Modal" class="modal-logo mb-3">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-outline-dark">
+                            <i class="bi bi-envelope-fill me-2"></i> Continuar com e-mail
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                            <i class="bi bi-facebook me-2"></i> Continuar com Facebook
+                        </button>
+                        <button type="button" class="btn btn-outline-danger">
+                            <i class="bi bi-google me-2"></i> Continuar com Google
+                        </button>
+                        <button type="button" class="btn btn-outline-dark">
+                            <i class="bi bi-apple me-2"></i> Continuar com Apple
+                        </button>
+                    </div>
+                    <div class="text-center mt-4">
+                        <p class="small text-muted">
+                            Ao fazer login ou criar uma conta, você concorda com nossos
+                            <a href="#" class="text-primary">Termos e Condições</a>.
+                            Leia nossa <a href="#" class="text-primary">Política de Privacidade</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Cadastro (Primeira Vez) -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Quase lá!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="text-center mb-4">
+                        <img src="./img/logo/logo_55_39.png" alt="Logo Modal" class="modal-logo mb-3">
+                    </div>
+                    <p class="text-center mb-4">Preencha seus dados e esteja a um passo para escolher sua próxima
+                        viagem! Todos campos são obrigatórios.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="fullName" placeholder="Nome completo" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="cpf" placeholder="CPF" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="date" class="form-control" id="birthDate" placeholder="Data de Nascimento"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" id="phone" placeholder="Telefone" required>
+                        </div>
+                        <p class="text-center mb-4">
+                            Ao finalizar seu cadastro, você também estará participando, gratuitamente, do nosso programa
+                            de pontos <strong>Clube Banzeiro</strong>.
+                            <a href="#" class="text-primary" data-bs-dismiss="modal" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Caso não queira participar clique aqui</a>.
+                        </p>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary w-100">Atualizar Cadastro</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm mt-5">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pacotes.html">Pacotes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cultura.html">Cultura</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+
+    <header class="text-white text-center py-5" style="background-color: #027630;">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Cultura Viva do Brasil</h1>
+            <p class="lead">Mergulhe nas tradições de Belém, Pará e outros estados brasileiros com a Banzeiro!</p>
+        </div>
+    </header>
+
+    <!-- Introdução -->
+    <section class="container my-5 text-center">
+        <h2 class="fw-bold mb-4">Riqueza Cultural com a Banzeiro</h2>
+        <p class="lead text-muted">A Banzeiro Viagens te leva a uma jornada pela alma do Brasil, destacando as
+            tradições, músicas, danças e sabores de Belém, Pará e além. Viva experiências autênticas e conecte-se com a
+            história de cada região!</p>
+    </section>
+
+    <!-- Cultura por Estado -->
+    <section class="container my-5" id="cultura">
+        <h2 class="text-center fw-bold mb-5">Descubra a Cultura dos Estados</h2>
+        <div class="row g-4">
+            <!-- Belém -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm culture-card">
+                    <img src="./img/arraial-do-pavulagem.jpg" class="card-img-top" alt="Cultura de Belém">
+                    <div class="card-body">
+                        <h5 class="card-title">Arraial do Pavulagem</h5>
+                        <p class="card-text">O Arraial do Pavulagem é um grupo musical e manifestação cultural do Pará
+                            que promove o evento "Arrastão do Pavulagem". O evento acontece anualmente no mês de junho,
+                            durante as festas juninas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pará -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm culture-card">
+                    <img src="./img/recife.jpg" class="card-img-top" alt="Cultura de Recife">
+                    <div class="card-body">
+                        <h5 class="card-title">Recife é uma cidade de cheiros, olhares e lembranças</h5>
+                        <p class="card-text">A cultura de Recife é rica e diversificada, com influências indígenas,
+                            africanas e portuguesas. O frevo, o maracatu, o caboclinho, o coco-de-roda, a ciranda, o
+                            samba e o afoxé são alguns dos ritmos que animam a cidade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maranhão -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm culture-card">
+                    <img src="./img/bumba_meu_boi.jpg" class="card-img-top" alt="Cultura do Maranhão">
+                    <div class="card-body">
+                        <h5 class="card-title">Maranhão: Ritmos e Histórias</h5>
+                        <p class="card-text">O Maranhão brilha com o Bumba Meu Boi, uma dança teatral rica em cores, e o
+                            Tambor de Crioula, herança afro-brasileira. São Luís, a "Jamaica Brasileira", encanta com
+                            sua arquitetura colonial.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rio de Janeiro -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm culture-card">
+                    <img src="./img/carnaval.jpeg" class="card-img-top" alt="Cultura do Rio de Janeiro">
+                    <div class="card-body">
+                        <h5 class="card-title">Rio de Janeiro: Carnaval e Samba</h5>
+                        <p class="card-text">O Rio pulsa com o Carnaval, o samba nas escolas de samba e a energia das
+                            praias. A cultura carioca mistura influências indígenas, africanas e portuguesas, vista no
+                            Pão de Açúcar e no Maracanã.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bahia -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm culture-card">
+                    <img src="./img/olodum.jpeg" class="card-img-top" alt="Cultura da Bahia">
+                    <div class="card-body">
+                        <h5 class="card-title">Bahia: Axé e Axé</h5>
+                        <p class="card-text">A Bahia vibra com o axé, capoeira e o candomblé, heranças africanas.
+                            Salvador encanta com o Pelourinho e a culinária como acarajé e moqueca, símbolos de
+                            resistência cultural e Olodum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel Criativo de Belém -->
+    <section class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Gastronomia Brasileira</h2>
+        <div id="carrosselCultura" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/comida_paraense.jpg" class="d-block w-100 carousel-img"
+                        alt="Comidas típicas de Belém do Pará">
+                    <div class="carousel-overlay">
+                        <h5>Comidas típicas de Belém do Pará</h5>
+                        <p>A culinária paraense é um patrimônio cultural do Brasil e é marcada por fortes influências
+                            indígenas e amazônicas. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/Baiao-de-Dois.jpg" class="d-block w-100 carousel-img" alt="Gastronomia do Ceará">
+                    <div class="carousel-overlay">
+                        <h5>Gastronomia do Ceará</h5>
+                        <p>A gastronomia do Ceará é rica e diversificada, com influências de estados vizinhos, como
+                            Bahia e Pernambuco. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/feijoada.jpg" class="d-block w-100 carousel-img"
+                        alt="gastronomia do Rio de Janeiro">
+                    <div class="carousel-overlay">
+                        <h5>gastronomia do Rio de Janeiro</h5>
+                        <p>A gastronomia do Rio de Janeiro é rica, diversificada e vibrante, refletindo a pluralidade da
+                            cidade. A culinária carioca é influenciada por povos indígenas, portugueses e africanos.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrosselCultura" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrosselCultura" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="container my-5 text-center bg-primary text-white p-5 rounded">
+        <h2 class="fw-bold mb-4">Viva a Cultura Brasileira!</h2>
+        <p class="lead">Participe de nossas viagens culturais e mergulhe nas tradições do Brasil com a Banzeiro Viagens.
+        </p>
+        <a href="pacotes.html" class="btn btn-light btn-lg mt-3">Explorar Pacotes Culturais</a>
+    </section>
+
+    <!-- Linha Divisória -->
+    <hr class="divider my-5" style="border-top: 1px solid #ccc;">
+
+    <!-- Footer -->
+    <footer class="footer py-5" style="background-color: #f2f5f4; color: #3c3c3c;">
+        <div class="container">
+            <div class="row">
+                <!-- 1ª Coluna: Banzeiro Viagens -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">BANZEIRO VIAGENS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="destinos.html">Destinos</a></li>
+                        <li><a href="pacotes.html">Pacotes</a></li>
+                        <li><a href="cultura.html">Cultura</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="#">Trabalhe Conosco - Matriz CVC</a></li>
+                    </ul>
+                </div>
+
+                <!-- 2ª Coluna: Central de Atendimento -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">CENTRAL DE ATENDIMENTO</h5>
+                    <p><strong>Suporte Pós Venda (Compras no site)</strong><br>
+                        91 98200-00 • Opção 2<br>
+                        Segunda à Sábado: 09h às 21h
+                    </p>
+                </div>
+
+                <!-- 3ª Coluna: Termos -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">TERMO</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso Clube BANZEIRO</a></li>
+                    </ul>
+                </div>
+
+                <!-- 4ª Coluna: Logo -->
+                <div class="col-md-3 mb-4 text-center">
+                    <img src="./img/logo/logo_banzeiro.png" alt="Logo Banzeiro" class="footer-logo">
+                </div>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="text-center">
+                <h6 class="fw-bold mb-3">Siga-nos nas Redes Sociais</h6>
+                <div class="social-icons">
+                    <a href="#" class="me-3"><i class="bi bi-facebook" style="font-size: 24px; color: #4d4d4d;"></i></a>
+                    <a href="#" class="me-3"><i class="bi bi-instagram"
+                            style="font-size: 24px; color: #4d4d4d;"></i></a>
+                    <a href="#" class="me-3"><i class="bi bi-youtube" style="font-size: 24px; color: #4d4d4d;"></i></a>
+                    <a href="#" class="me-3"><i class="bi bi-pinterest"
+                            style="font-size: 24px; color: #4d4d4d;"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Adicionar o JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

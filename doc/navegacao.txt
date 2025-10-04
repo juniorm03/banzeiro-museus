@@ -1,0 +1,67 @@
+ <ul class="navbar-nav ms-auto">
+                    
+      <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+      <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+      <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+      <li class="nav-item"><a class="nav-link" href="pacotes.html">Pacotes</a></li>
+      <li class="nav-item"><a class="nav-link" href="cultura.html">Cultura</a></li>
+      <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+      <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+      <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+
+
+
+<ul class="nav justify-content-end">
+    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Início</a></li>
+    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+    <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+    <li class="nav-item"><a class="nav-link" href="pacotes.html">Pacotes</a></li>
+    <li class="nav-item"><a class="nav-link" href="cultura.html">Cultura</a></li>
+    <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+    <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">Disabled</a></li>
+</ul>
+
+
+___________________________
+
+<ul class="navbar-nav ms-auto">
+  <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+  <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+  <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+  <li class="nav-item"><a class="nav-link" href="pacotes.html">Pacotes</a></li>
+  <li class="nav-item"><a class="nav-link" href="cultura.html">Cultura</a></li>
+  <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+  <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+  <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+</ul>
+
+
+Explicação linha por linha:
+<ul class="navbar-nav ms-auto">:
+
+<ul>: Define uma lista não ordenada.
+class="navbar-nav": A classe navbar-nav é uma classe do Bootstrap que aplica o estilo adequado a itens de navegação em uma barra de navegação (navbar).
+ms-auto: A classe ms-auto (do Bootstrap 5) aplica uma margem automática à esquerda, o que faz os itens da navegação se alinharem à direita da tela. Ou seja, todos os itens da lista vão para a extremidade direita da barra de navegação.
+<li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>:
+
+<li class="nav-item">: Um item de lista dentro da barra de navegação. A classe nav-item aplica estilos de lista próprios para navegação.
+<a class="nav-link active" href="index.html">Início</a>:
+<a>: Define o link da navegação.
+class="nav-link": Aplica os estilos do Bootstrap para links dentro de uma barra de navegação.
+active: Marca o link como ativo, ou seja, o link da página atual.
+href="index.html": O destino do link, neste caso, leva à página index.html.
+Início: O texto que será exibido no link.
+Demais itens de navegação: As demais linhas seguem o mesmo formato, alterando o destino de cada link (por exemplo, galeria.html, destinos.html, etc.). Cada <li> com a classe nav-item contém um link (<a>) com a classe nav-link.
+
+</ul>: Esta linha fecha a lista não ordenada (<ul>), terminando o bloco de itens da barra de navegação.
+
+Detalhes importantes:
+Classes do Bootstrap:
+navbar-nav: Aplica a estrutura de navegação da barra de navegação do Bootstrap.
+nav-item: Aplica os estilos de um item de lista em uma barra de navegação.
+nav-link: Aplica os estilos para links de navegação.
+active: Indica que o link está ativo (geralmente usado para o link da página atual).
+ms-auto: Alinha os itens de navegação à direita.
+Este código cria uma lista de itens de navegação em uma barra de navegação. Eles estão alinhados à direita da página e indicam qual página está ativa. Para personalizar ainda mais, você pode adicionar outras classes ou estilos CSS, se necessário.

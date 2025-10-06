@@ -1,0 +1,129 @@
+/*ESTILIZAR APENAS OS ELEMENTOS ESPECÍFICOS DA PÁGINA MUSEUS*/
+
+.titulos{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    color: var(--primaria);
+
+}
+
+.sub-titulos{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+    color: var(--secundaria);
+}
+
+.museus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 60px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.container-card-museu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-museu{
+    background-color: var(--fundo);
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.card-museu:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2  );
+}
+    
+
+.card-museu img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    flex-shrink: 0; /*Impede que a imagem encolha*/
+}
+
+.card-corpo-museu{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 25px;
+    text-align: center;
+    background: var(--fundo);
+}
+
+.card-corpo-museu p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-align: justify;
+    flex-grow: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+
+}
+.card-corpo-museu button {
+    background: var(--primaria);
+    color: var(--fundo);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    min-width: 120px;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+.card-corpo-museu button:hover{
+    background: var(--acoes);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    color: var(--fundo);
+}
+
+/* 🔥 NOVO: Responsividade */
+@media (max-width: 1024px) {
+    .container-card-museu{
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .container-card-museu{
+        grid-template-columns: 1fr; /* 1 coluna em mobile */
+    }
+    
+    .card-museu{
+        height: auto; /* Altura automática em mobile */
+        min-height: 450px;
+    }
+}
